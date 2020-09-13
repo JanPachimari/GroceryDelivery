@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
@@ -15,10 +15,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/foodImage"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/foodTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -39,18 +39,18 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/foodImage" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/foodIsNew"
         android:layout_width="65dp"
         android:layout_height="55dp"
         android:src="@drawable/ic_baseline_fiber_new_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/foodImage" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/foodPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -60,16 +60,16 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/foodImage" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/foodDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="with tomato sauce and mozzarella"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/foodTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
